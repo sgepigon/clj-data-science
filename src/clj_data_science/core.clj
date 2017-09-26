@@ -1,6 +1,7 @@
 (ns clj-data-science.core
   (:gen-class)
   (:require [clojure.spec.alpha :as spec]
+            [clojure.spec.gen.alpha :as spec.gen]
             [clojure.spec.test.alpha :as spec.test]
             [expound.alpha :as expound]
             [spec-provider.provider :as spec.provider]))

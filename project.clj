@@ -6,6 +6,7 @@
   :dependencies [[expound "0.3.0"]
                  [org.clojure/clojure "1.9.0-beta1"]
                  [org.clojure/core.specs.alpha "0.1.24"]
+                 [org.clojure/test.check "0.10.0-alpha2"]
                  [spec-provider "0.4.9"]]
   :main ^:skip-aot clj-data-science.core
   :target-path "target/%s"
