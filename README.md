@@ -1,6 +1,6 @@
-# clj-data-science
+# Clojure Data Science
 
-FIXME: description
+A simple demo of Clojure utilities for data science.
 
 ## Installation
 
