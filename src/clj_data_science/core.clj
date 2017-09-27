@@ -11,16 +11,16 @@
   [& args]
   (println "Hello, World!"))
 
-;; ----- spec dev tools -----
+;; ------ spec dev tools ------
 
-(set! spec/*explain-out* (expound/custom-printer {:show-valid-values? true})) ; show valid values
+(set! spec/*explain-out* (expound/custom-printer {:show-valid-values? true}))
 (spec.test/instrument)
 
-(comment (set! spec/*explain-out* spec/explain-printer) ; default
-         (set! spec/*explain-out* expound/printer)      ; ...
-         (set! spec/*explain-out* (expound/custom-printer {:show-valid-values? true})) ; show valid values
+(comment
+  (set! spec/*explain-out* spec/explain-printer) ; default
+  (set! spec/*explain-out* expound/printer)      ; ...
+  (set! spec/*explain-out* (expound/custom-printer {:show-valid-values? true}))
 
-         (spec.test/instrument)
-         (spec.test/unstrument)
-         :end
-         )
+  (spec.test/instrument)
+  (spec.test/unstrument)
+  :end)
