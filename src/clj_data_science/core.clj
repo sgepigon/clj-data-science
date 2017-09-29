@@ -13,9 +13,6 @@
 
 ;; ------ spec dev tools ------
 
-(set! spec/*explain-out* (expound/custom-printer {:show-valid-values? true}))
-(spec.test/instrument)
-
 (comment
   (set! spec/*explain-out* spec/explain-printer) ; default
   (set! spec/*explain-out* expound/printer)      ; ...
